@@ -2,7 +2,7 @@
 all: sum-git
 
 sum-test: sum.o main.o
-	g++ -o sum-test sum.o main.o
+	gcc -o sum-git sum.o main.o
 
 main.o: sum.h main.c
 
