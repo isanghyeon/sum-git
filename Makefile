@@ -1,14 +1,14 @@
 #Makefile
-all: sum-git
+all: sum-test
 
 sum-test: sum.o main.o
-	g++ -o sum-git sum.o main.o
+	g++ -o sum-test sum.o main.o
 
-main.o: sum.h main.c
+main.o: sum.h main.cpp
 
-sum.o: sum.h sum.c
+sum.o: sum.h sum.cpp
 
 clean:
-	rm -f sum-git
+	rm -f sum-test
 	rm -f *.o
 
